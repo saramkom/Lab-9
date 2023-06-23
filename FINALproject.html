@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><link href="styleFINAL.css"type="text/css"rel="stylesheet">  </head><body>
+
+<h1> <li> Staying hydrated </li> <li> Amount drank today: </li> </h1>
+
+ 
+ <div class="container">
+    <h3> It's recommened to drink <i>at least</i> 8 cups of water per day. </h3> 
+   
+   <p class="output1" id="output1"></p>
+    <img id="picture"></img>
+  </div>
+ <p> Enter water amount: </p>
+<div class="second">
+
+
+ 
+<form onsubmit="event.preventDefault(); greeting(); showPicture();">
+  <label for="amount"></label>
+  <div class="input-container">
+    <select id="amount" >
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="250">250</option>
+		<option value="500">500</option>
+		<option value="750">750</option>
+		<option value="1000">1000</option>
+		<option value="1250">1250</option>
+		<option value="1500">1500</option>
+		<option value="1750">1750</option>
+		<option value="2000">2000</option>
+		<option value="8.">8</option>
+		<option value="16">16</option>
+		<option value="24">24</option>
+		<option value="32">32</option>
+		<option value="40">40</option>
+		<option value="48">48</option>
+		<option value="56">56</option>
+		<option value="64">64</option>
+	</select>
+  
+  
+
+ <select id="unit">
+      <option value="cup(s)">Cup(s)</option>
+      <option value="ml">Milliliters (ml)</option>
+      <option value="fl. oz">Fluid Ounces (fl. oz) </option>	
+	     </select>
+<input type="submit" id="btn1" value="Submit">
+  <table id="courseTable">
+    <tr>
+      <th>Amount</th>
+      <th>Units</th>
+	 
+    
+    </tr>
+     <tr>
+      <td>2 (example)</td>
+	  <td>cup(s) (example) </td>
+	 </tr>
+   
+  </table>
+  
+</div>
+	</div>
+
+   
+ 
+  </div>
+ 
+
+</form>
+<p> Enter alternate water source (ex. watermelon): </p>
+<input type="text" id="textInput" placeholder="Enter text">
+
+<!---           PART 2               --->
+<!---  All done in Javascript below  --->
+<div class="part">
+  <button onclick="addCourse()" id="btn2" >Add Amount</button><br>
+ 
+</div>
+ <p>Enter the date: </p> 
+ <div class="date">
+    <label for="day">Day:</label>
+    <select id="day">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28">28</option>
+		<option value="29">29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+		
+    </select>
+    <label for="month">Month:</label>
+    <select id="month">
+		<option value="January">January</option>
+		<option value="February">February</option>
+		<option value="March">March</option>
+		<option value="April">April</option>
+		<option value="May">May</option>
+		<option value="June">June</option>
+		<option value="July">July</option>
+		<option value="August">August</option>
+		<option value="September">September</option>
+		<option value="October">October</option>
+		<option value="November">November</option>
+		<option value="December">December</option>
+	</select>
+	
+<button onclick="addDate()" id="addDate">Submit</button> <br> <br> <br> <br>
+	</div>
+
+ <table id="dateTable">
+    <tr>
+      <th>Date</th>
+      <th>Total Cups</th>
+	  <th>Total ml </th>
+	  <th>Total fl.oz </th>
+    
+    </tr>
+    
+   
+  </table> <br>
+<button onclick="SaveData()" id="btn3">Sign in to save data</button>
+</div>
+	</div>
+
+   
+ 
+  </div>
+	
+  <div id="imageContainer"></div>
+
+  <p class="reference"></p>
+  <script src="FINALproject.js"></script>
+  
+</body>
+</html>
